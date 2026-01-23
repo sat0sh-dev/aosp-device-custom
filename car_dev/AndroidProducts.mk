@@ -1,8 +1,8 @@
-# Product list for AOSP Car emulator builds
+# Product list for SDK Car emulator builds
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_car_dev.mk
+    $(LOCAL_DIR)/sdk_car_dev.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_car_dev-trunk_staging-eng \
-    aosp_car_dev-trunk_staging-userdebug
+    sdk_car_dev-trunk_staging-eng \
+    sdk_car_dev-trunk_staging-userdebug

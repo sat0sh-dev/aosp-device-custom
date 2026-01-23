@@ -1,7 +1,8 @@
 # AOSP Pixel 7a Development Product Configuration
 #
 # Target: Pixel 7a (lynx)
-# Usage: lunch aosp_lynx_dev-userdebug
+# Usage: lunch aosp_lynx_dev-trunk_staging-userdebug (Android 15+)
+#        lunch aosp_lynx_dev-userdebug (Android 14)
 #
 # Prerequisites:
 # - Pixel 7a proprietary binaries from https://developers.google.com/android/blobs-preview
@@ -11,7 +12,7 @@
 $(call inherit-product, device/google/lynx/aosp_lynx.mk)
 
 # Include custom vendor modules
-$(call inherit-product, device/anthropic/common/vendor_modules.mk)
+$(call inherit-product, device/custom/common/vendor_modules.mk)
 
 # Product identification
 PRODUCT_NAME := aosp_lynx_dev
