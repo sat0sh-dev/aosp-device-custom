@@ -1,7 +1,11 @@
 # AOSP Pixel 7a Development Product Configuration
 #
 # Target: Pixel 7a (lynx)
-# Usage: lunch aosp_lynx_dev-trunk_staging-userdebug (Android 15+)
+#
+# IMPORTANT: Android 16 (Baklava) removed Pixel device trees from AOSP.
+# Use Android 15 with bp1a release.
+#
+# Usage: lunch aosp_lynx_dev-bp1a-eng (Android 15, tested 2026-01-28)
 #        lunch aosp_lynx_dev-userdebug (Android 14)
 #
 # Prerequisites:
