@@ -26,3 +26,6 @@ $(call inherit-product, vendor/auth_hook/auth_hook.mk)
 
 # Security Test App (optional)
 $(call inherit-product-if-exists, vendor/hacker_db_app/hacker_db_app.mk)
+
+# KeystoreCrypto Service (Phase 3.13: PAL-VCS MAC)
+$(call inherit-product, vendor/keystore_crypto/keystore_crypto.mk)
