@@ -10,7 +10,7 @@
 $(call inherit-product, device/generic/car/sdk_car_x86_64.mk)
 
 # Include custom vendor modules
-$(call inherit-product, device/custom/common/vendor_modules.mk)
+$(call inherit-product, device/custom/common/product_modules.mk)
 
 # Product identification (override base)
 PRODUCT_NAME := sdk_car_dev

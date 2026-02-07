@@ -16,7 +16,7 @@
 $(call inherit-product, device/google/lynx/aosp_lynx.mk)
 
 # Include custom vendor modules
-$(call inherit-product, device/custom/common/vendor_modules.mk)
+$(call inherit-product, device/custom/common/product_modules.mk)
 
 # Product identification
 PRODUCT_NAME := aosp_lynx_dev
