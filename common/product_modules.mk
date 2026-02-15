@@ -8,10 +8,10 @@
 # Data Broker (Rust daemon) - Kura equivalent
 $(call inherit-product, product/db/db.mk)
 
-# PDU2VSS Daemon (GET direction: PDUSender -> Kura)
+# PDU2VSS Daemon (GET direction: PDUSender -> Kura via UDP multicast)
 $(call inherit-product, product/pdu2vss/pdu2vss.mk)
 
-# VSS2VCS Daemon (SET direction: Kura -> VCS via SOME/IP)
+# VSS2VCS Daemon (SET direction: Kura -> VCS via SOME/IP + MAC)
 $(call inherit-product, product/vss2vcs/vss2vcs.mk)
 
 # VHAL Daemon (UDP multicast test)

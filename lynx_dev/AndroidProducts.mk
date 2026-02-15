@@ -10,7 +10,10 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_lynx_dev.mk
 
 # Tested with Android 15 bp1a release (2026-01-28)
+# trunk_staging added for Baklava builds (2026-02)
 COMMON_LUNCH_CHOICES := \
+    aosp_lynx_dev-trunk_staging-userdebug \
+    aosp_lynx_dev-trunk_staging-eng \
     aosp_lynx_dev-bp1a-userdebug \
     aosp_lynx_dev-bp1a-eng \
     aosp_lynx_dev-userdebug \
