@@ -5,13 +5,16 @@
 #
 # Note: These modules are deployed to /product partition, not /vendor partition.
 
-# Data Broker (Rust daemon)
+# Data Broker (Rust daemon) - Kura equivalent
 $(call inherit-product, product/db/db.mk)
 
-# PAL Daemon (UDP multicast receiver)
-$(call inherit-product, product/pal/pal.mk)
+# PDU2VSS Daemon (GET direction: PDUSender -> Kura)
+$(call inherit-product, product/pdu2vss/pdu2vss.mk)
 
-# VHAL Daemon (UDP multicast receiver)
+# VSS2VCS Daemon (SET direction: Kura -> VCS via SOME/IP)
+$(call inherit-product, product/vss2vcs/vss2vcs.mk)
+
+# VHAL Daemon (UDP multicast test)
 $(call inherit-product, product/vhal/vhal.mk)
 
 # C++ Client Library
